@@ -6,7 +6,6 @@ import { getServerSession } from 'next-auth';
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
-  const name  = session?.user?.name
 
   let client = await connectDB;
   const db = client.db('forum');
@@ -16,12 +15,9 @@ export default async function Home() {
   return (
     <>
       {!session ? 
-        <h1>로그인 필요</h1> 
+        <Hero />
         : 
-        <>
-          <Hero />
-        </>
-        
+        <Hero />
       }
     </>
   )

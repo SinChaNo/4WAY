@@ -4,9 +4,9 @@ import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import { getServerSession } from "next-auth";
 
 const Main = async () => {
-  const session = await getServerSession(authOptions);
+	const session = await getServerSession(authOptions);
 	const db = (await connectDB).db("forum")
-  const result = await db.collection('post').find().toArray();
+	const result = await db.collection('post').find().toArray();
 	return (
 		<>
 			<Card result={result} session = {session}/>
