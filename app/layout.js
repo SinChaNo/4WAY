@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/pages/api/auth/[...nextauth]'
 import LogoutBtn from '@/components/logoutBtn'
-import LoginBtn from '@/components/gitLoginBtn'
 import Footer from '@/components/footer'
+import LogInBtn from '@/components/LoginBtn'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,7 +36,7 @@ export default async function RootLayout({ children }) {
             </div>
             {/* 로그인 버튼 */}
             {/* 이름을 클릭할시 드롭다운메뉴안에 들어가도록 추후 수정할 것 */}
-            {session ? <LogoutBtn /> : <LoginBtn />}
+            {session ? <LogoutBtn /> : <LogInBtn />}
           </div>
         </header>
         {children}
