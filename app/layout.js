@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/pages/api/auth/[...nextauth]'
 import LogoutBtn from '@/components/logoutBtn'
-import LoginBtn from '@/components/loginBtn'
+import LoginBtn from '@/components/gitLoginBtn'
 import Footer from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
