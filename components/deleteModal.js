@@ -20,7 +20,6 @@ const DeleteModal = () => {
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 cursor-pointer fill-current text-slate-500 hover:text-slate-900">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
-                              
                       </a>
                       <h1 class="text-3xl font-bold">Delete controller</h1>
                       <p class="text-sm text-gray-500">Are you sure you want to delete this controller?</p>
